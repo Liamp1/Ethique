@@ -1,0 +1,176 @@
+@font-face { 
+    font-family: 'Crimson';
+    src: url('fonts/Crimson-Roman.otf');
+}
+@font-face { 
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat-Medium.otf');
+}
+@font-face { 
+    font-family: 'MontserratBold';
+    src: url('fonts/Montserrat-ExtraBold.otf');
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #24252A;
+    color: #edf0f1;
+    font-family: 'Montserrat', sans-serif;
+}
+li, a, button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500px;
+    font-size: 18px;
+    color: #edf0f1;
+    text-decoration: none;
+    padding : 7px 10px;
+    border-radius: 3px;
+} 
+
+header {display : flex;
+justify-content: flex-end;
+align-items: center;
+padding: 30px 5%;
+}
+
+.icon {
+    font-family: 'MontserratBold', sans-serif;
+    font-size: 25px;
+    cursor: pointer;
+    margin-right:auto;
+}
+
+.nav_links {
+    list-style: none;
+}
+.nav_links li{
+    display: inline-block;
+    padding: 0px 7px;
+}
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+}
+.nav_links li a:hover {
+    color: #0088a9
+}
+a.active, a:hover{
+    background-color: #43444e;
+    transition: .5s;
+}
+.cta:hover{
+    background-color: #24252A;
+}
+button {
+    margin-left: 15px;
+    padding: 9px 25px;
+    background-color: rgba(0,136,169,1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover{
+    background-color: rgba(0,136,169,0.8);
+}
+.text{
+    display: flex;
+    justify-content: center;
+}
+h1 {
+    font-family: 'Crimson', sans-serif;
+    font-style: italic;
+    color:  #00abd6;
+    padding-bottom: 25px;
+    padding-top: 15px;
+}
+.aboutus{
+    flex-basis: 40%;
+    flex-wrap:wrap;
+    line-height: 25px;
+    margin : auto ;
+}
+.imgaside{
+    max-width : 45%;
+    margin-right: 7.5%;
+}
+.checkbtn{
+    font-size: 30px;
+    color: #edf0f1;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check{
+    display: none;
+  }
+  @media screen and (max-width : 1400px) {
+    li, a, button {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500px;
+        font-size:16px;
+        color: #edf0f1;
+        text-decoration: none;
+        padding : 7px 10px;
+        border-radius: 3px;
+    } 
+    button {
+        margin-left: 15px;
+        padding: 9px 25px;
+        background-color: rgba(0,136,169,1);
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+    }
+      
+  }
+  @media (max-width: 1250px){
+    
+    .checkbtn{
+      display: block;
+    }
+    a.icon{
+        font-size: 40px;
+    }
+    ul{
+      position: fixed;
+      width: 30%;
+      height: 100vh;
+      background: #24252A;  
+      top: -100%;
+      right: 0;
+      text-align: center;
+    }
+
+    nav ul li{
+    width: 100%;
+      margin: 20px 0;
+      line-height: 23px;
+      font-size: 30px;
+    }
+    #check:checked ~ ul{
+      top : 90px;
+    }
+  }
+
+  @media screen and (max-width: 767px) { 
+      .text{ 
+        flex-direction : column-reverse; 
+        align-items:center;
+        margin-left: 5%;
+    } 
+    .imgaside{ 
+        min-width: 85%; 
+
+    } 
+    .aboutus { 
+        margin-top: 20px; 
+        margin-left: 7.5%; 
+        margin-right: 7.5%; 
+    } 
+}
