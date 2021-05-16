@@ -73,6 +73,7 @@ button {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    margin : 0;
 }
 h1 {
     font-family: 'Crimson', sans-serif;
@@ -84,23 +85,18 @@ h1 {
 .aboutus{
     flex-basis: 40%;
     flex-wrap:wrap;
-    line-height: 25px;
-    margin : auto ;
-}
-.img{
-min-width: 50%;
-
+    line-height: 25px; 
 }
 .bis {
-    flex-basis: 100%;
+    flex-basis: 90%;
     flex-wrap:wrap;
     line-height: 25px;
     margin : auto ;
 }
 .imgaside{
     flex-basis : 40%;
-    margin-right: 7.5%;
     height: 100%;
+    padding-left : 2.5%
 }
 .checkbtn{
     font-size: 30px;
@@ -213,5 +209,10 @@ button:hover{
     margin-right: 50px;
 }
 p{
-    padding: 25px;
+    padding: 0;
+    padding-top: 11px;
+    padding-bottom:11px;
+}
+.wrapped {
+    padding-top:0;
 }
