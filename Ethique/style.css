@@ -69,13 +69,10 @@ button {
     transition: all 0.3s ease 0s;
 }
 
-button:hover{
-    background-color: rgba(0,136,169,0.8);
-    transition : .5s;
-}
 .text{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 h1 {
     font-family: 'Crimson', sans-serif;
@@ -90,9 +87,20 @@ h1 {
     line-height: 25px;
     margin : auto ;
 }
+.img{
+min-width: 50%;
+
+}
+.bis {
+    flex-basis: 100%;
+    flex-wrap:wrap;
+    line-height: 25px;
+    margin : auto ;
+}
 .imgaside{
-    max-width : 45%;
+    flex-basis : 40%;
     margin-right: 7.5%;
+    height: 100%;
 }
 .checkbtn{
     font-size: 30px;
@@ -106,8 +114,18 @@ h1 {
   .sticky {
     position: fixed;
     bottom : 5%;
-    right : 2%; 
+    right : 2%;
+    padding : 0;
+    background-color: #ffffff00;
   }
+  .sticky:hover{
+    background-color: #ffffff00;
+}
+
+button:hover{
+    background-color: rgb(1, 127, 158);
+    transition: .5s;
+}
   #check{
     display: none;
   }
@@ -135,7 +153,7 @@ h1 {
         padding : 0;
         background-color: #ffffff00;
     }
-    .sticky:hover{
+    a.sticky:hover{
         background-color: #ffffff00;
     }
     button:hover{
@@ -188,4 +206,12 @@ h1 {
         margin-left: 7.5%; 
         margin-right: 7.5%; 
     } 
+    
+}
+.container {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+p{
+    padding: 25px;
 }
