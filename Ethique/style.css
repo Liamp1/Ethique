@@ -59,9 +59,6 @@ a.active, a:hover{
     background-color: #43444e;
     transition: .5s;
 }
-.cta:hover{
-    background-color: #24252A;
-}
 button {
     margin-left: 15px;
     padding: 9px 25px;
@@ -74,6 +71,7 @@ button {
 
 button:hover{
     background-color: rgba(0,136,169,0.8);
+    transition : .5s;
 }
 .text{
     display: flex;
@@ -105,9 +103,15 @@ h1 {
     cursor: pointer;
     display: none;
   }
+  .sticky {
+    position: fixed;
+    bottom : 5%;
+    right : 2%; 
+  }
   #check{
     display: none;
   }
+
   @media screen and (max-width : 1400px) {
     li, a, button {
         font-family: 'Montserrat', sans-serif;
@@ -119,13 +123,24 @@ h1 {
         border-radius: 3px;
     } 
     button {
-        margin-left: 15px;
+        margin: 0;
         padding: 9px 25px;
         background-color: rgba(0,136,169,1);
         border: none;
         border-radius: 50px;
         cursor: pointer;
         transition: all 0.3s ease 0s;
+    }
+    .sticky {
+        padding : 0;
+        background-color: #ffffff00;
+    }
+    .sticky:hover{
+        background-color: #ffffff00;
+    }
+    button:hover{
+        background-color: rgb(1, 127, 158);
+        transition: .5s;
     }
       
   }
